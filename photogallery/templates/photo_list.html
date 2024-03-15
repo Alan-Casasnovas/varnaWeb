@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liste des photos</title>
+</head>
+<body>
+    <h1>Liste des photos</h1>
+    <ul>
+        {% for photo in photos %}
+            <li><a href="{% url 'photo_detail' photo.pk %}">{{ photo }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

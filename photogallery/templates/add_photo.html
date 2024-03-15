@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ajouter une photo</title>
+</head>
+<body>
+    <h1>Ajouter une photo</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Ajouter la photo</button>
+    </form>
+</body>
+</html>
